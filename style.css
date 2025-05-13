@@ -9,7 +9,18 @@ body{
     padding: 3%;
     background-color: #C1D8C3;
 }
-
+.individual-sidebar{
+    margin-right: 2%;
+    padding: 3%;
+    width: 20%;
+    background: #C1D8C3;
+    height: 100vh;
+}
+.individual-sidebar a {
+    display: block;
+    padding: 10px;
+    color: #3D0301;
+}
 .main{
     padding: 2%;
 }
@@ -26,16 +37,37 @@ h1{
 
 .card-carousel{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
     flex-wrap: wrap;
-    gap: 4%;
     margin-top: 8%;
 }
-
+.contact-card {
+    width: 100vh;
+    height: 40vh;
+    text-align: center;
+    padding: 2%;
+    margin: 4%;
+    background: #FFF5E4;
+    border-radius: 20px;
+}
+.des-c {
+    text-align: center;
+}
 .card{
     margin-bottom: 3%;
     background-color: #FFF5E4;
     padding: 3% 4%;
     width: 20%;
+    border-radius: 20px;
+}
+.bottom {
+    margin-bottom: 3%;
+    background-color: #FFF5E4;
+    padding: 3% 4%;
+    text-align: center;
+    width: 90%;
     border-radius: 20px;
 }
 
