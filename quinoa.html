@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="utils.js" defer></script>
+    <script type ="module">
+        import {fetchNutrientData } from './utils.js';
+        fetchNutrientData('quinoa', 'Protein');
+        fetchNutrientData('quinoa', 'Carbohydrate, by difference');
+        fetchNutrientData('quinoa', 'Total lipid (fat)');
+    </script>
 </head>
 <body>
     <div class="individual-sidebar">
@@ -23,15 +30,15 @@
         <div class="card-carousel">
             <div class="card">
                 <h2>Protein</h2>
-                <p>Overview: Apples are a great source of Vitamin. This fruit is delicious and full of nutrients...</p>
+                <p id = "Protein">Loading data...</p>
             </div>
             <div class="card">
                 <h2>Carbs</h2>
-                <p>Overview: Bananas are full of potassium. They contain vitamin C, magnesium, and fiber...</p>
+                <p id = "Carbohydrate, by difference">Loading data...</p>
             </div>
             <div class="card">
                 <h2>Fats</h2>
-                <p>Overview: Oranges are a citrus fruit known for being a great source of Vitamin C and having various health benefits...</p>
+                <p id = "Total lipid (fat)">Loading data...</p>
             </div>
         </div>
     </div>
